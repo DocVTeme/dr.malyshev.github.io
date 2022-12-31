@@ -1,1 +1,1 @@
-# dr.malyshev.github.io
+# malyshev.github.io
