@@ -1,0 +1,168 @@
+
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Montserrat';
+    margin: auto;
+    background-image: url('static/images/DSC02448.jpg');
+}
+.container{
+
+    display: flex;
+    margin-top: 10px;
+    column-gap:50px;
+}
+
+.text_container{ 
+    margin-top: 50px;
+}
+
+
+.description{
+    margin-top:50px;
+    display:grid;
+    gap: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+
+}
+
+h1{
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 60px;
+/* identical to box height, or 216% */
+
+display: flex;
+align-items: center;
+background: linear-gradient(90deg, #16568E 4.18%, #81A9CB 101.92%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+H2{
+    font-weight: 400;
+    display: flex;
+align-items: center;
+
+background: linear-gradient(90deg, #000000 4.18%, #868686 101.92%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+margin: 0%;
+}
+
+h2.sub_title {
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+min-width:320px;
+max-width:320px;
+/* identical to box height, or 120% */
+
+display: flex;
+align-items: center;
+background: linear-gradient(90deg, #000000 4.18%, #868686 101.92%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+img{
+max-width: 290px;
+margin-top: 50px;
+}
+
+button{
+margin-top:30px;
+width: 280px;
+height: 52px;
+left: calc(50% - 280px/2 - 49.93px);
+top: calc(50% - 52px/2 - 875.55px);
+background: #16568E;
+border-radius: 43px;
+color: aliceblue;
+
+
+}
+
+button:hover{
+    
+    background-color: rgb(255, 255, 255);
+    stroke: none;
+    color: black;
+    border:1px, #16568E;
+    cursor:pointer;
+    transition: background-color 0.5s;
+}
+
+.main_title {
+    margin: 0%;
+}
+
+.second_container{
+    height: 100px;
+    color: white;
+
+}
+
+@media (max-width:576px)
+{
+
+    .container{
+    
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 50px;
+
+    }
+
+    .description{
+    display:grid;
+    gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  
+    /* ! */
+    align-items: center;
+    }
+    .text_container{
+        margin:0px;
+    }
+}
+
+@media (max-width:958px)
+{
+
+    .description{
+        margin-top:50px;
+    display:grid;
+    gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+
+    }
+    .IMG{
+        align-items:center;
+        
+    }
+    img{
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 1100px){
+
+
+.container {
+    /* grid-column: 1/13; */
+    grid-row: 2/3;
+}
+}
+
